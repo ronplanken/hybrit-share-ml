@@ -2,6 +2,8 @@
 
 In het `cartpole.py` bestand staat een uitgewerkt reinforcement learning algoritme die de [cartpole-v0](https://gym.openai.com/envs/CartPole-v0/) omgeving van gym kan oplossen. Deze uitwerking is bedoeld als voorbeeld om je een idee te geven hoe een wat meer geadvanceerd RL algoritme er uit kan komen te zien om een complex(er) probleem op te kunnen lossen.
 
+Het doel van dit algoritme is om ervoor te zorgen dat het stokje gedurende 200 stappen (ticks) overeind blijft staan op een karretje die naar links of rechts beweegt.  
+
 Je kunt het algoritme trainen met het commando:
 
 ```python cartpole.py```
