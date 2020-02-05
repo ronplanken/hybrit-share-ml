@@ -1,6 +1,6 @@
 # Cartpole
 
-In het `cartpole.py` bestand staat een uitgewerkt reinforcement learning algoritme die de [cartpole-v0](https://gym.openai.com/envs/CartPole-v0/) omgeving van gym kan oplossen. Deze uitwerking is bedoeld als voorbeeld om je een idee te geven hoe een wat meer geadvanceerd RL algoritme eruit kan komen te zien om een complex(er) probleem op te kunnen lossen.
+In het `cartpole.py` bestand staat een uitgewerkt reinforcement learning algoritme die de [cartpole-v0](https://gym.openai.com/envs/CartPole-v0/) omgeving van gym kan oplossen. Deze uitwerking is bedoeld als voorbeeld om je een idee te geven hoe een wat meer geadvanceerd RL algoritme er uit kan komen te zien om een complex(er) probleem op te kunnen lossen.
 
 Je kunt het algoritme trainen met het commando:
 
