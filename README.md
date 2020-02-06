@@ -3,7 +3,7 @@
 Om met deze repo aan de slag te gaan heb je de volgende dingen nodig:
 
 - Voor opdrachten 1 & 2 heb je Docker nodig. 
-- Voor het extra materiaal heb je Python 3.5+ nodig.
+- Voor het extra materiaal heb je Python 3.5+ nodig (ik raad zelf 3.6 aan).
 
 ## Docker - voorbereiding opdrachten 1 & 2
 
