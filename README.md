@@ -3,7 +3,7 @@
 Om met deze repo aan de slag te gaan heb je de volgende dingen nodig:
 
 - Voor opdrachten 1 & 2 heb je Docker nodig. 
-- Voor het extra materiaal heb je Python 3.5+ nodig (ik raad zelf 3.6 aan).
+- Voor het extra materiaal heb je Python 3.5 of 3.6 nodig (ik raad zelf 3.6 aan).
 
 ## Docker - voorbereiding opdrachten 1 & 2
 
@@ -27,7 +27,7 @@ Dit commando zorgt ervoor dat de huidige directory toegankelijk is voor de docke
 
 ## Extra materiaal - voorbereiding
 
-Om het extra materiaal te kunnen gebruiken heb je een installatie van Python 3.5+ nodig. Via het `pip` commando kun je de benodigde python modules installeren die in de `requirements.txt` file staan opgegeven:
+Om het extra materiaal te kunnen gebruiken heb je een installatie van Python 3.5 of 3.6 nodig (ik raad zelf 3.6 aan). Via het `pip` commando kun je de benodigde python modules installeren die in de `requirements.txt` file staan opgegeven:
 
 ```pip install -r requirements.txt```
 
