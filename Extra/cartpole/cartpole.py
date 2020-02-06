@@ -1,5 +1,6 @@
-import sys
 import os
+os.environ['FOR_DISABLE_CONSOLE_CTRL_HANDLER'] = 'T'
+import sys
 import random
 import gym
 import math
@@ -9,6 +10,7 @@ from keras.models import Sequential
 from keras.layers import Dense
 from keras.optimizers import Adam
 from keras.models import load_model
+from time import sleep
 
 class DQNCartPoleSolver():
     def __init__(self, gamma=1.0, epsilon=1.0, epsilon_min=0.01, epsilon_log_decay=0.995, alpha=0.01, alpha_decay=0.01, batch_size=64, monitor=False, model_file=None):
@@ -72,8 +74,6 @@ class DQNCartPoleSolver():
             while not done:
                 action = self.choose_action(state, self.get_epsilon(e))
                 next_state, reward, done, _ = self.env.step(action)
-                if reward != 1.0:
-                    print(reward)
                 next_state = self.preprocess_state(next_state)
                 self.remember(state, action, reward, next_state, done)
                 state = next_state
@@ -107,8 +107,9 @@ class DQNCartPoleSolver():
                 next_state = self.preprocess_state(next_state)
                 state = next_state
                 i += 1
-                if e % 10 == 0 and i % 3 == 0:
+                if e % 5 == 0:
                     self.env.render()
+                    sleep(0.01)
 
             scores.append(i)
             overall_scores.append(i)
@@ -125,7 +126,7 @@ if __name__ == '__main__':
         if is_testing:
             file = sys.argv[2]
             if os.path.exists(file):
-                agent = DQNCartPoleSolver(model_file=file, monitor=True)
+                agent = DQNCartPoleSolver(model_file=file, monitor=False)
                 agent.test()
             else:
                 raise Exception("The file {} does not exist.".format(file))
